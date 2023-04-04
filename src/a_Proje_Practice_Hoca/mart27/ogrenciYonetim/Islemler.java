@@ -35,7 +35,7 @@ public class Islemler {
             case 'Q': {
                 System.exit(0);
             }
-            default: {
+            default:{
                 System.out.println("YANLIŞ DEĞER GİRDİNİZ: ");
                 menu(ogrList);
             }
@@ -43,17 +43,17 @@ public class Islemler {
     }
 
     private void silme(List<Ogrenci> ogrList) {
-        int flag = 0;
+        int flag=0;
         System.out.print("SİLİNECEK TC NO YU GİRİNİZ: ");
-        String silinecekTcNo = scan.next();
+        String silinecekTcNo=scan.next();
         for (int i = 0; i < ogrList.size(); i++) {
-            if (silinecekTcNo.equals(ogrList.get(i).getTcNo())) {
+            if (silinecekTcNo.equals(ogrList.get(i).getTcNo())){
                 ogrList.remove(i);
-                flag = 1;
+                flag=1;
                 listele(ogrList);
             }
         }
-        if (flag == 0) {
+        if (flag==0){
             System.out.println("ARADIĞINIZ TC NO YA AİT ÖĞRENCİ YOKTUR..");
             menu(ogrList);
         }

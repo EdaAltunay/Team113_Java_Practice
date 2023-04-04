@@ -2,7 +2,7 @@ package a_Proje_Practice_Hoca.mart27.geometrikSekiller;
 
 import java.util.Scanner;
 
-public class Kare implements Islemler {
+public class Kare implements Iislemler {
     Scanner scan = new Scanner(System.in);
 
     @Override
